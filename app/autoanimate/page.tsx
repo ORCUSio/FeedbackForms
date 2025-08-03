@@ -25,9 +25,11 @@ const Input = () => {
   });
 
   return (
-    <div ref={parent}>
-      {visible ? (
-        <div className="p-4" onClick={handleClick}>
+    <div className="parent" ref={parent}>
+      {!visible ? (
+        <div className="p-4
+        "
+         onClick={handleClick}>
           <IoSearchOutline />
         </div>
       ) : (
