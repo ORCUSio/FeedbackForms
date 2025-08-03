@@ -1,5 +1,6 @@
 import autoAnimate from "@formkit/auto-animate";
 import { useState, useRef, useEffect } from "react";
+import useClickOutside from "./useClickOutside";
 
 const useAutoAnimate = ({
   defaultVisible = true,
@@ -12,6 +13,11 @@ const useAutoAnimate = ({
   const handleClick = () => {
     setVisible((prev) => !prev);
   };
+  useClickOutside(parent, () => {
+    if (visible) {
+      setVisible(false);
+    }
+  });
 
   useEffect(() => {
     parent.current &&
