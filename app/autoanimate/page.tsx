@@ -1,6 +1,6 @@
 "use client";
 
-import useAutoAnimate from "@/src/hooks/useAutoAnimate";
+import useAutoAnimate from "@/src/hooks/useCustomAutoAnimate";
 import { cn } from "@/src/lib/utils";
 import { IoSearchOutline } from "react-icons/io5";
 
@@ -27,9 +27,11 @@ const Input = () => {
   return (
     <div className="parent" ref={parent}>
       {!visible ? (
-        <div className="p-4
+        <div
+          className="p-4
         "
-         onClick={handleClick}>
+          onClick={handleClick}
+        >
           <IoSearchOutline />
         </div>
       ) : (

@@ -2,7 +2,7 @@ import autoAnimate from "@formkit/auto-animate";
 import { useState, useRef, useEffect } from "react";
 import useClickOutside from "./useClickOutside";
 
-const useAutoAnimate = ({
+const useCustomAutoAnimate = ({
   defaultVisible = true,
 }: {
   defaultVisible?: boolean;
@@ -30,4 +30,4 @@ const useAutoAnimate = ({
   return { visible, setVisible, parent, handleClick };
 };
 
-export default useAutoAnimate;
+export default useCustomAutoAnimate;
