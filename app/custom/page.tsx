@@ -17,7 +17,6 @@ import useFormAdded from "@/src/store/useFormAdded";
 import useSelectedTypeStore from "@/src/store/useSelectedTypeStore";
 import { Selections, SelectionTypes, selectionValues } from "@/src/types";
 import React, { JSX } from "react";
-import { useStore } from "zustand";
 
 function Custom() {
   const { setFormAdded, addDefaultForm, formAdded } = useFormAdded();

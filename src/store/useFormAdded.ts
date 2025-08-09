@@ -71,7 +71,7 @@ const defaultFormTypes = (type: SelectionTypes): Selections => {
       return {
         title: "Untitled Heading",
         options: [],
-        paragraph: "",
+        paragraph: "eww",
         type: "Short Answer",
       };
   }

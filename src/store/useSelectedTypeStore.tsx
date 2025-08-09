@@ -1,8 +1,8 @@
 import { create } from "zustand";
-import { SelectionTypes, StoreState } from "../types";
+import { SelectionTypes, selectionValues, StoreState } from "../types";
 
 const useSelectedTypeStore = create<StoreState>((set) => ({
-  selected: "Dropdown",
+  selected: selectionValues[0],
   setSelected: (item: SelectionTypes) => set({ selected: item }),
 }));
 
